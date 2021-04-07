@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DMS-Practice.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>DMS-Watch (Notification).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>MealExtentsion.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>59085772220C4312000AC793</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5976F1F7224DFDAD00458921</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5976F21F224DFF4300458921</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59D517C521C768C700192176</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59D517D921C768C800192176</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59D517E421C768C800192176</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

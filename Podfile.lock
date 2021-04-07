@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.9.0)
+  - CryptoSwift (0.13.1)
+  - RxAlamofire (5.0.0):
+    - RxAlamofire/Core (= 5.0.0)
+  - RxAlamofire/Core (5.0.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxSwift (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CryptoSwift
+  - RxAlamofire
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CryptoSwift
+  trunk:
+    - Alamofire
+    - RxAlamofire
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  CryptoSwift: ff68c35a53e03177d31aaa2c1e8b3e010aeed6cb
+  RxAlamofire: e7875a012aff55345672d0f70a2a9cd6aeb0f211
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+
+PODFILE CHECKSUM: bb766795bc3e8362f310a4696054b0da0ef153ba
+
+COCOAPODS: 1.8.0.beta.2

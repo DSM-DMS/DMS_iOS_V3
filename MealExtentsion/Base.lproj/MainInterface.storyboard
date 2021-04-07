@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="MealExtentsion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUX-0w-LUU">
+                                <rect key="frame" x="55.5" y="17" width="37" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아침" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvp-MY-WJ6">
+                                <rect key="frame" x="16" y="13" width="31.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="급식 없어오" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPO-Lh-OYn">
+                                <rect key="frame" x="16" y="44" width="288" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hI1-Ke-9hT">
+                                <rect key="frame" x="274" y="9" width="30" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="H3c-R8-LJA"/>
+                                    <constraint firstAttribute="width" constant="30" id="vQr-xz-Icu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="다음"/>
+                                <connections>
+                                    <action selector="after:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Qq6-sc-mSr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGq-Mk-HYp">
+                                <rect key="frame" x="236" y="9" width="30" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="XaA-62-nmq"/>
+                                    <constraint firstAttribute="width" constant="30" id="ozz-jL-0CV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="이전"/>
+                                <connections>
+                                    <action selector="before:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="hF0-gS-ZwX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YPO-Lh-OYn" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="16H-2Q-BSQ"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="hI1-Ke-9hT" secondAttribute="trailing" constant="16" id="3SC-sS-lTN"/>
+                            <constraint firstItem="gUX-0w-LUU" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="17" id="BPO-pN-kAi"/>
+                            <constraint firstItem="hI1-Ke-9hT" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="9" id="GDo-mE-lRE"/>
+                            <constraint firstItem="hI1-Ke-9hT" firstAttribute="leading" secondItem="kGq-Mk-HYp" secondAttribute="trailing" constant="8" id="WgN-vo-Tqm"/>
+                            <constraint firstItem="YPO-Lh-OYn" firstAttribute="top" secondItem="gUX-0w-LUU" secondAttribute="bottom" constant="10" id="apS-qH-VC0"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="YPO-Lh-OYn" secondAttribute="trailing" constant="16" id="dDe-fn-xy9"/>
+                            <constraint firstItem="gUX-0w-LUU" firstAttribute="leading" secondItem="dvp-MY-WJ6" secondAttribute="trailing" constant="8" id="gBl-sX-emb"/>
+                            <constraint firstItem="dvp-MY-WJ6" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="kGE-OC-rrq"/>
+                            <constraint firstItem="kGq-Mk-HYp" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="9" id="kHd-GB-ELL"/>
+                            <constraint firstItem="dvp-MY-WJ6" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="13" id="oY5-c7-hgY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="100"/>
+                    <connections>
+                        <outlet property="dataTextView" destination="YPO-Lh-OYn" id="1ne-uC-YwM"/>
+                        <outlet property="dateLabel" destination="gUX-0w-LUU" id="E4A-Mp-M1U"/>
+                        <outlet property="timeLabel" destination="dvp-MY-WJ6" id="cAf-C5-50g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
