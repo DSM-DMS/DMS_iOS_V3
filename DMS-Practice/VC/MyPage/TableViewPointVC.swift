@@ -85,7 +85,7 @@ class TableViewPointVC: UITableViewController {
                     let pointType: String = String(format: "%@", list![i]["pointType"] as! CVarArg)
                     let reason: String = String(format: "%@", list![i]["reason"] as! CVarArg)
                     var type: Bool = true
-                    if pointType == "0" { type = false }
+                    if pointType == "0" { type = true }
                     else { type = false }
                     self!.cellData.append(CellPoint(title: reason, date: date, point: point, type: type))
                 }
