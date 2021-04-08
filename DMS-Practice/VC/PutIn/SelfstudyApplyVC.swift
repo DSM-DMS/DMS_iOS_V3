@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class SelfstudyApplyVC: UIViewController {
-
+    
     @IBOutlet var btnsStudyRoomOutlet: [UIButton]!
     @IBOutlet var btnsAction: [UIButton]!
     @IBOutlet weak var backScrollView: UIScrollView!
@@ -24,6 +24,21 @@ class SelfstudyApplyVC: UIViewController {
     private var selectedTime = 12
     private var selectedClass = 1
     private var selectedSeat = 0
+    
+    private let placeArr: [Place] =
+        [
+            Place(top: "칠판", left: "창문", right: "복도"),
+            Place(top: "칠판", left: "창문", right: "복도"),
+            Place(top: "칠판", left: "창문", right: "복도"),
+            Place(top: "칠판", left: "창문", right: "복도"),
+            Place(top: "창문", left: "", right: ""),
+            Place(top:  "창문", left: "학교", right: "옆방"),
+            Place(top:  "창문", left: "옆방", right: "계단"),
+            Place(top: "창문", left: "학교", right: "옆방"),
+            Place(top: "창문", left:  "옆방", right: "계단"),
+            Place(top: "창문", left:  "학교", right: "계단"),
+            Place(top: "", left: "", right: "")
+        ]
     
     var beforeButton: UIButton? = nil
     var contentView: UIView? = nil
@@ -55,7 +70,6 @@ class SelfstudyApplyVC: UIViewController {
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
-        labelChange()
         // Do any additional setup after loading the view.
     }
     
@@ -71,12 +85,17 @@ class SelfstudyApplyVC: UIViewController {
         btnsStudyRoomOutlet[sender.tag].layer.borderWidth = 2
         btnsStudyRoomOutlet[sender.tag].layer.borderColor = color.mint.getcolor().cgColor
         btnsStudyRoomOutlet[sender.tag].tintColor = color.mint.getcolor()
+        labelChange(sender.tag)
         selectedClass = sender.tag + 1
         getMap()
-        
-        
-        
     }
+    
+    func labelChange(_ index: Int) { // 눌렀을때 뷰가 바뀌고 그 뷰에 맞춰서 눌렀을때 인덱스값
+        topLabel.text = placeArr[index].top
+        leftLabel.text = placeArr[index].left
+        rightLabel.text = placeArr[index].right
+    }
+    
     
     @IBAction func segTimeChanged(_ sender: Any) {
         getMap()
@@ -242,8 +261,7 @@ extension SelfstudyApplyVC {
             default:
                 strongSelf.showError(404)
             }
-            
-            }.resume()
+        }.resume()
     }
     
     private func bindData(_ dataArr: [[Any]]){
@@ -293,86 +311,6 @@ extension SelfstudyApplyVC {
             showToast(msg: "자리가 있습니다")
         }
     }
-    
-    func labelChange() {
-        btnsStudyRoomOutlet[0].rx.tap
-            .bind {
-                self.topLabel.text = "칠판"
-                self.leftLabel.text = "창문"
-                self.rightLabel.text = "복도"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[1].rx.tap
-            .bind {
-                self.topLabel.text = "칠판"
-                self.leftLabel.text = "창문"
-                self.rightLabel.text = "복도"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[2].rx.tap
-            .bind {
-                self.topLabel.text = "칠판"
-                self.leftLabel.text = "창문"
-                self.rightLabel.text = "복도"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[3].rx.tap
-            .bind {
-                self.topLabel.text = "칠판"
-                self.leftLabel.text = "창문"
-                self.rightLabel.text = "복도"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[4].rx.tap
-            .bind {
-                self.topLabel.text = "창문"
-                self.leftLabel.text = ""
-                self.rightLabel.text = ""
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[5].rx.tap
-            .bind {
-                self.topLabel.text = "창문"
-                self.leftLabel.text = "학교"
-                self.rightLabel.text = "옆방"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[6].rx.tap
-            .bind {
-                self.topLabel.text = "창문"
-                self.leftLabel.text = "옆방"
-                self.rightLabel.text = "계단"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[7].rx.tap
-            .bind {
-                self.topLabel.text = "창문"
-                self.leftLabel.text = "학교"
-                self.rightLabel.text = "옆방"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[8].rx.tap
-            .bind {
-                self.topLabel.text = "창문"
-                self.leftLabel.text = "옆방"
-                self.rightLabel.text = "계단"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[9].rx.tap
-            .bind {
-                self.topLabel.text = "창문"
-                self.leftLabel.text = "학교"
-                self.rightLabel.text = "계단"
-            }.disposed(by: disposeBag)
-        
-        btnsStudyRoomOutlet[10].rx.tap
-            .bind {
-                self.topLabel.text = ""
-                self.leftLabel.text = ""
-                self.rightLabel.text = ""
-            }.disposed(by: disposeBag)
-    }
-    
 }
 
 extension UIButton{
@@ -405,4 +343,10 @@ extension UIButton{
 
 fileprivate enum SeatState{
     case empty, select, exist, unavailable
+}
+
+struct Place {
+    let top: String
+    let left: String
+    let right: String
 }
