@@ -7,7 +7,8 @@
 
 
 import UIKit
-import SnapKit
+import RxSwift
+import RxCocoa
 
 class SelfstudyApplyVC: UIViewController {
 
@@ -15,13 +16,18 @@ class SelfstudyApplyVC: UIViewController {
     @IBOutlet var btnsAction: [UIButton]!
     @IBOutlet weak var backScrollView: UIScrollView!
     @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var rightLabel: UILabel!
     
+    let disposeBag = DisposeBag()
     private var selectedTime = 12
     private var selectedClass = 1
     private var selectedSeat = 0
     
     var beforeButton: UIButton? = nil
     var contentView: UIView? = nil
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +55,7 @@ class SelfstudyApplyVC: UIViewController {
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
+        labelChange()
         // Do any additional setup after loading the view.
     }
     
@@ -66,6 +73,9 @@ class SelfstudyApplyVC: UIViewController {
         btnsStudyRoomOutlet[sender.tag].tintColor = color.mint.getcolor()
         selectedClass = sender.tag + 1
         getMap()
+        
+        
+        
     }
     
     @IBAction func segTimeChanged(_ sender: Any) {
@@ -272,6 +282,7 @@ extension SelfstudyApplyVC {
     }
     
     
+    
     @objc func onClick(_ button: UIButton){
         if let seatNum = Int(button.title(for: .normal)!){
             beforeButton?.setShape(state: .empty)
@@ -281,6 +292,85 @@ extension SelfstudyApplyVC {
         }else{
             showToast(msg: "자리가 있습니다")
         }
+    }
+    
+    func labelChange() {
+        btnsStudyRoomOutlet[0].rx.tap
+            .bind {
+                self.topLabel.text = "칠판"
+                self.leftLabel.text = "창문"
+                self.rightLabel.text = "복도"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[1].rx.tap
+            .bind {
+                self.topLabel.text = "칠판"
+                self.leftLabel.text = "창문"
+                self.rightLabel.text = "복도"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[2].rx.tap
+            .bind {
+                self.topLabel.text = "칠판"
+                self.leftLabel.text = "창문"
+                self.rightLabel.text = "복도"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[3].rx.tap
+            .bind {
+                self.topLabel.text = "칠판"
+                self.leftLabel.text = "창문"
+                self.rightLabel.text = "복도"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[4].rx.tap
+            .bind {
+                self.topLabel.text = "창문"
+                self.leftLabel.text = ""
+                self.rightLabel.text = ""
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[5].rx.tap
+            .bind {
+                self.topLabel.text = "창문"
+                self.leftLabel.text = "학교"
+                self.rightLabel.text = "옆방"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[6].rx.tap
+            .bind {
+                self.topLabel.text = "창문"
+                self.leftLabel.text = "옆방"
+                self.rightLabel.text = "계단"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[7].rx.tap
+            .bind {
+                self.topLabel.text = "창문"
+                self.leftLabel.text = "학교"
+                self.rightLabel.text = "옆방"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[8].rx.tap
+            .bind {
+                self.topLabel.text = "창문"
+                self.leftLabel.text = "옆방"
+                self.rightLabel.text = "계단"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[9].rx.tap
+            .bind {
+                self.topLabel.text = "창문"
+                self.leftLabel.text = "학교"
+                self.rightLabel.text = "계단"
+            }.disposed(by: disposeBag)
+        
+        btnsStudyRoomOutlet[10].rx.tap
+            .bind {
+                self.topLabel.text = ""
+                self.leftLabel.text = ""
+                self.rightLabel.text = ""
+            }.disposed(by: disposeBag)
     }
     
 }
