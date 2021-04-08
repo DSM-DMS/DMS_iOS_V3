@@ -7,20 +7,42 @@
 
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class SelfstudyApplyVC: UIViewController {
-
+    
     @IBOutlet var btnsStudyRoomOutlet: [UIButton]!
     @IBOutlet var btnsAction: [UIButton]!
     @IBOutlet weak var backScrollView: UIScrollView!
     @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var rightLabel: UILabel!
     
+    let disposeBag = DisposeBag()
     private var selectedTime = 12
     private var selectedClass = 1
     private var selectedSeat = 0
     
+    private let placeArr: [Place] =
+        [
+            Place(top: "칠판", left: "창문", right: "복도"),
+            Place(top: "칠판", left: "창문", right: "복도"),
+            Place(top: "칠판", left: "창문", right: "복도"),
+            Place(top: "칠판", left: "창문", right: "복도"),
+            Place(top: "창문", left: "", right: ""),
+            Place(top:  "창문", left: "학교", right: "옆방"),
+            Place(top:  "창문", left: "옆방", right: "계단"),
+            Place(top: "창문", left: "학교", right: "옆방"),
+            Place(top: "창문", left:  "옆방", right: "계단"),
+            Place(top: "창문", left:  "학교", right: "계단"),
+            Place(top: "", left: "", right: "")
+        ]
+    
     var beforeButton: UIButton? = nil
     var contentView: UIView? = nil
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,14 +79,23 @@ class SelfstudyApplyVC: UIViewController {
             btnsStudyRoomOutlet[i].layer.borderColor = UIColor.lightGray.cgColor
             btnsStudyRoomOutlet[i].layer.borderWidth = 1
             btnsStudyRoomOutlet[sender.tag].backgroundColor = UIColor.white
+            
         }
         btnsStudyRoomOutlet[sender.tag].backgroundColor = UIColor(red: 240/255, green: 240/256, blue: 240/256, alpha: 1)
         btnsStudyRoomOutlet[sender.tag].layer.borderWidth = 2
         btnsStudyRoomOutlet[sender.tag].layer.borderColor = color.mint.getcolor().cgColor
         btnsStudyRoomOutlet[sender.tag].tintColor = color.mint.getcolor()
+        labelChange(sender.tag)
         selectedClass = sender.tag + 1
         getMap()
     }
+    
+    func labelChange(_ index: Int) { // 눌렀을때 뷰가 바뀌고 그 뷰에 맞춰서 눌렀을때 인덱스값
+        topLabel.text = placeArr[index].top
+        leftLabel.text = placeArr[index].left
+        rightLabel.text = placeArr[index].right
+    }
+    
     
     @IBAction func segTimeChanged(_ sender: Any) {
         getMap()
@@ -230,8 +261,7 @@ extension SelfstudyApplyVC {
             default:
                 strongSelf.showError(404)
             }
-            
-            }.resume()
+        }.resume()
     }
     
     private func bindData(_ dataArr: [[Any]]){
@@ -269,6 +299,8 @@ extension SelfstudyApplyVC {
         return button
     }
     
+    
+    
     @objc func onClick(_ button: UIButton){
         if let seatNum = Int(button.title(for: .normal)!){
             beforeButton?.setShape(state: .empty)
@@ -279,7 +311,6 @@ extension SelfstudyApplyVC {
             showToast(msg: "자리가 있습니다")
         }
     }
-    
 }
 
 extension UIButton{
@@ -312,4 +343,10 @@ extension UIButton{
 
 fileprivate enum SeatState{
     case empty, select, exist, unavailable
+}
+
+struct Place {
+    let top: String
+    let left: String
+    let right: String
 }
