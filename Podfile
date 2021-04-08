@@ -10,6 +10,7 @@ target 'DMS-Practice' do
   pod 'RxSwift'
   pod 'RxAlamofire'
   pod 'Alamofire'
+  pod 'SnapKit'
 
   target 'DMS-PracticeTests' do
     inherit! :search_paths

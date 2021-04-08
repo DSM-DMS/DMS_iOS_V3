@@ -7,6 +7,7 @@
 
 
 import UIKit
+import SnapKit
 
 class SelfstudyApplyVC: UIViewController {
 
@@ -57,6 +58,7 @@ class SelfstudyApplyVC: UIViewController {
             btnsStudyRoomOutlet[i].layer.borderColor = UIColor.lightGray.cgColor
             btnsStudyRoomOutlet[i].layer.borderWidth = 1
             btnsStudyRoomOutlet[sender.tag].backgroundColor = UIColor.white
+            
         }
         btnsStudyRoomOutlet[sender.tag].backgroundColor = UIColor(red: 240/255, green: 240/256, blue: 240/256, alpha: 1)
         btnsStudyRoomOutlet[sender.tag].layer.borderWidth = 2
@@ -268,6 +270,7 @@ extension SelfstudyApplyVC {
         contentView?.addSubview(button)
         return button
     }
+    
     
     @objc func onClick(_ button: UIButton){
         if let seatNum = Int(button.title(for: .normal)!){
