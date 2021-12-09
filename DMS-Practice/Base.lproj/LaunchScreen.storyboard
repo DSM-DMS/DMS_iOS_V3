@@ -18,22 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XRl-aH-j2S">
-                                <rect key="frame" x="154" y="226.5" width="67" height="69"/>
+                                <rect key="frame" x="135" y="208.5" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="LBh-uR-LdV"/>
+                                    <constraint firstAttribute="width" constant="105" id="k3e-3h-Rcz"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ Team DMS - Dormitory Management System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHU-Ld-0fj">
-                                <rect key="frame" x="94.5" y="615" width="186" height="10"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ Team DMS - Dormitory Management System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHU-Ld-0fj">
+                                <rect key="frame" x="7" y="635" width="361" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" name="colorGray700"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="colorGray100"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CHU-Ld-0fj" secondAttribute="bottom" constant="42" id="BT4-mv-dNy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CHU-Ld-0fj" secondAttribute="bottom" constant="20" id="DR6-qh-0U9"/>
                             <constraint firstItem="XRl-aH-j2S" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GVW-kF-1uh"/>
                             <constraint firstItem="XRl-aH-j2S" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-72.75" id="Gds-Ts-b3n"/>
-                            <constraint firstItem="CHU-Ld-0fj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O4S-ec-5YI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CHU-Ld-0fj" secondAttribute="trailing" constant="7" id="GpX-VU-YLZ"/>
+                            <constraint firstItem="CHU-Ld-0fj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="J1c-iJ-8Fe"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -43,9 +48,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="67" height="69.5"/>
+        <image name="logo" width="100.5" height="104"/>
         <namedColor name="colorGray100">
             <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorGray700">
+            <color red="0.25099998712539673" green="0.25099998712539673" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

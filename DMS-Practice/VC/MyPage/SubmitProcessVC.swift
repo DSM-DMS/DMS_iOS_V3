@@ -49,8 +49,8 @@ class SubmitProcessVC: UIViewController {
             print((res as! HTTPURLResponse).statusCode)
             switch (res as! HTTPURLResponse).statusCode{
             case 200:
-                let jsonSerialization = try! JSONSerialization.jsonObject(with: data!, options: []) as! [String:[[String: Any]]]
-                let list = jsonSerialization["point_history"]
+//                let jsonSerialization = try! JSONSerialization.jsonObject(with: data!, options: []) as! [String:[[String: Any]]]
+//                let list = jsonSerialization["point_history"]
                 DispatchQueue.main.async {
                     self?.showToast(msg: "권한 없음")
                 }
