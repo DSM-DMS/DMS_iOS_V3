@@ -282,6 +282,7 @@
 		590FC41F21DDB6FA00C7E8C9 /* Notice */ = {
 			isa = PBXGroup;
 			children = (
+				59483F11248F24FF004C49D0 /* InfoAPI.swift */,
 				5941EAB021D46AA00042E930 /* NoticeVC.swift */,
 				5941EAB221D49FBF0042E930 /* TableViewNoticeVC.swift */,
 				590FC41A21DC61F900C7E8C9 /* DetailNoticeVC.swift */,
@@ -294,7 +295,6 @@
 			children = (
 				59483F0C248F249D004C49D0 /* Connector.swift */,
 				59483F0F248F24D8004C49D0 /* APIProtocol.swift */,
-				59483F11248F24FF004C49D0 /* InfoAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -502,21 +502,25 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = leedonggi;
 				TargetAttributes = {
 					59085772220C4312000AC793 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1310;
 					};
 					59D517C521C768C700192176 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1310;
 					};
 					59D517D921C768C800192176 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 59D517C521C768C700192176;
 					};
 					59D517E421C768C800192176 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 59D517C521C768C700192176;
 					};
 				};
@@ -814,7 +818,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -838,7 +842,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -869,6 +873,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -930,6 +935,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -967,18 +973,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.42.1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.42;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -991,18 +997,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.42.1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.42;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1023,7 +1029,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-PracticeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMS-Practice.app/DMS-Practice";
 			};
@@ -1045,7 +1051,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-PracticeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMS-Practice.app/DMS-Practice";
 			};
@@ -1066,7 +1072,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-PracticeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "DMS-Practice";
 			};
@@ -1087,7 +1093,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-PracticeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "DMS-Practice";
 			};
