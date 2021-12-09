@@ -88,13 +88,13 @@ class RemainApplyVC: UIViewController {
     
     func changeColor() {
         if preCondition < 4 {
-            viewsBackground[preCondition].backgroundColor = UIColor.white
+            viewsBackground[preCondition].backgroundColor = UIColor(named: "colorGray200")
             lblsTitle[preCondition].textColor = color.mint.getcolor()
-            lblsDescription[preCondition].textColor = UIColor.darkGray
+            lblsDescription[preCondition].textColor = UIColor(named: "colorGray700")
         }
         viewsBackground[curCondition].backgroundColor = color.mint.getcolor()
-        lblsTitle[curCondition].textColor = UIColor.white
-        lblsDescription[curCondition].textColor = UIColor.white
+        lblsTitle[curCondition].textColor = .white
+        lblsDescription[curCondition].textColor = .white
     }
     
     func getData() {

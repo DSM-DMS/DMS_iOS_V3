@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vlu-H1-vFG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vlu-H1-vFG">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,13 +21,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018년 10월 02일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNn-5M-0jb">
                                 <rect key="frame" x="129" y="32" width="117.5" height="20"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="16"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="colorGray800"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월요일 식단표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VJ-UB-0Lh">
                                 <rect key="frame" x="143.5" y="58" width="88" height="20"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="colorGray800"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-w7-stJ">
@@ -34,7 +36,10 @@
                                     <constraint firstAttribute="width" constant="24" id="3AU-kg-c1K"/>
                                     <constraint firstAttribute="height" constant="24" id="4eJ-Kh-VpR"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="arrow_left"/>
+                                <color key="tintColor" name="colorGray800"/>
+                                <state key="normal" title="Button" image="arrow_left">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="btnLeft:" destination="Vlu-H1-vFG" eventType="touchUpInside" id="miv-NS-g0N"/>
                                 </connections>
@@ -45,6 +50,7 @@
                                     <constraint firstAttribute="height" constant="24" id="X4b-eL-ixo"/>
                                     <constraint firstAttribute="width" constant="24" id="qXy-PA-wqN"/>
                                 </constraints>
+                                <color key="tintColor" name="colorGray800"/>
                                 <state key="normal" title="Button" image="arrow_right"/>
                                 <connections>
                                     <action selector="btnRight:" destination="Vlu-H1-vFG" eventType="touchUpInside" id="vCP-O3-7dp"/>
@@ -60,13 +66,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네트워크 상태 불량" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8b-10-won">
-                                        <rect key="frame" x="25" y="48" width="265" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="25" y="48" width="265" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" name="colorGray700"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="v8b-10-won" secondAttribute="trailing" constant="25" id="CGh-LX-6ty"/>
                                     <constraint firstItem="WKl-Ub-6dp" firstAttribute="leading" secondItem="tIe-O4-QBM" secondAttribute="leading" constant="25" id="Spw-sS-zMP"/>
@@ -85,13 +91,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네트워크 상태 불량" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXR-vS-hxs">
-                                        <rect key="frame" x="25" y="48" width="265" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="25" y="48" width="265" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" name="colorGray700"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstItem="TMS-4V-T8L" firstAttribute="top" secondItem="o4V-Nb-vMq" secondAttribute="top" constant="22" id="Dhv-yz-wG7"/>
                                     <constraint firstAttribute="trailing" secondItem="yXR-vS-hxs" secondAttribute="trailing" constant="25" id="M8T-WK-h3Z"/>
@@ -110,13 +116,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네트워크 상태 불량" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcH-3p-COI">
-                                        <rect key="frame" x="25" y="48" width="265" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="25" y="48" width="265" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" name="colorGray700"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tcH-3p-COI" secondAttribute="trailing" constant="25" id="AnT-jY-SvO"/>
                                     <constraint firstItem="tcH-3p-COI" firstAttribute="leading" secondItem="cKD-H4-fhK" secondAttribute="leading" constant="25" id="JSJ-93-X4c"/>
@@ -126,7 +132,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.97647720575332642" green="0.9764588475227356" blue="0.97647124528884888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="IN3-Tv-Cev"/>
+                        <color key="backgroundColor" name="colorGray100"/>
                         <constraints>
                             <constraint firstItem="cKD-H4-fhK" firstAttribute="top" secondItem="o4V-Nb-vMq" secondAttribute="bottom" constant="35" id="26S-Ad-G5x"/>
                             <constraint firstItem="UNn-5M-0jb" firstAttribute="top" secondItem="IN3-Tv-Cev" secondAttribute="top" constant="32" id="2mY-G4-cPr"/>
@@ -154,7 +161,6 @@
                             <constraint firstItem="cKD-H4-fhK" firstAttribute="height" secondItem="tIe-O4-QBM" secondAttribute="height" id="vPv-z5-IqU"/>
                             <constraint firstItem="IN3-Tv-Cev" firstAttribute="trailing" secondItem="cKD-H4-fhK" secondAttribute="trailing" constant="30" id="yUl-7u-ohy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="IN3-Tv-Cev"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="급식" image="meal" selectedImage="meal" id="H1e-Cv-JRU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -178,5 +184,20 @@
         <image name="arrow_left" width="24" height="24"/>
         <image name="arrow_right" width="24" height="24"/>
         <image name="meal" width="24" height="24"/>
+        <namedColor name="colorGray100">
+            <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorGray200">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorGray700">
+            <color red="0.25099998712539673" green="0.25099998712539673" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorGray800">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

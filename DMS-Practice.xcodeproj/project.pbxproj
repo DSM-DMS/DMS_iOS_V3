@@ -57,6 +57,7 @@
 		6CEF22421CD2CB3A2E2A691D /* Pods_DMS_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568A4D70621F7903F125E703 /* Pods_DMS_Practice.framework */; };
 		969BB90C83B2F175FDFF8038 /* Pods_DMS_PracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F20755084614168696B99 /* Pods_DMS_PracticeUITests.framework */; };
 		A821BBEAB13F0967764627B2 /* Pods_MealExtentsion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C3E55AC4DD0840A789CCF4 /* Pods_MealExtentsion.framework */; };
+		D9FD9FBB26D7583C00664757 /* WeekendMealApplyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD9FBA26D7583C00664757 /* WeekendMealApplyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +173,7 @@
 		98D04D43E8B614AF84005B39 /* Pods-DMS-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMS-Practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMS-Practice/Pods-DMS-Practice.debug.xcconfig"; sourceTree = "<group>"; };
 		A05D19F1B30C5D6CC6DDD2E0 /* Pods-MealExtentsion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealExtentsion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealExtentsion/Pods-MealExtentsion.debug.xcconfig"; sourceTree = "<group>"; };
 		CB5F20755084614168696B99 /* Pods_DMS_PracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMS_PracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9FD9FBA26D7583C00664757 /* WeekendMealApplyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekendMealApplyVC.swift; sourceTree = "<group>"; };
 		FC458202A339B8EE97F5AFE5 /* Pods_DMS_PracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMS_PracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -240,6 +242,7 @@
 				59CC157B21CBCCD200AF0FC0 /* PutInVC.swift */,
 				590FC42621DDB7DE00C7E8C9 /* SelfstudyApplyVC.swift */,
 				590FC42021DDB79F00C7E8C9 /* RemainApplyVC.swift */,
+				D9FD9FBA26D7583C00664757 /* WeekendMealApplyVC.swift */,
 				590FC42221DDB7B300C7E8C9 /* MusicApplyVC.swift */,
 				590FC42421DDB7CA00C7E8C9 /* GooutApplyVC.swift */,
 				59DE82E121E369D400E5EFA7 /* GooutFormVC.swift */,
@@ -498,7 +501,7 @@
 		59D517BE21C768C700192176 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = leedonggi;
 				TargetAttributes = {
@@ -717,6 +720,7 @@
 				590FC42721DDB7DE00C7E8C9 /* SelfstudyApplyVC.swift in Sources */,
 				590FC42521DDB7CA00C7E8C9 /* GooutApplyVC.swift in Sources */,
 				590FC42321DDB7B300C7E8C9 /* MusicApplyVC.swift in Sources */,
+				D9FD9FBB26D7583C00664757 /* WeekendMealApplyVC.swift in Sources */,
 				59DE82E221E369D400E5EFA7 /* GooutFormVC.swift in Sources */,
 				599AB4B621D31A1A007A23F2 /* Empty.swift in Sources */,
 				598C098D21D05E4C00CF881E /* LoginVC.swift in Sources */,
@@ -797,7 +801,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.39.1;
+				CURRENT_PROJECT_VERSION = 1.0.42.1;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = MealExtentsion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -805,7 +809,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.39;
+				MARKETING_VERSION = 1.0.42;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3.MealExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -821,7 +825,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.39.1;
+				CURRENT_PROJECT_VERSION = 1.0.42.1;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = MealExtentsion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -829,7 +833,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.39;
+				MARKETING_VERSION = 1.0.42;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3.MealExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -963,14 +967,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.39.1;
+				CURRENT_PROJECT_VERSION = 1.0.42.1;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.39;
+				MARKETING_VERSION = 1.0.42;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -987,14 +991,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.39.1;
+				CURRENT_PROJECT_VERSION = 1.0.42.1;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.39;
+				MARKETING_VERSION = 1.0.42;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1010,7 +1014,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K6AYHZNZZ2;
+				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-PracticeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1032,7 +1036,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K6AYHZNZZ2;
+				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-PracticeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1053,7 +1057,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K6AYHZNZZ2;
+				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-PracticeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1074,7 +1078,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K6AYHZNZZ2;
+				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-PracticeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

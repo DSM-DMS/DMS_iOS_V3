@@ -69,8 +69,8 @@ class NoticeVC: UIViewController {
     func changeColor() {
         condition = false
         UIView.animate(withDuration: 0.5) {
-            self.lblTitles[self.curInt].textColor = UIColor.white
-            self.lblDetails[self.curInt].textColor = UIColor.white
+            self.lblTitles[self.curInt].textColor = UIColor(named: "colorGray200")
+            self.lblDetails[self.curInt].textColor = UIColor(named: "colorGray700")
             self.viewsNotice[self.curInt].backgroundColor = color.mint.getcolor()
             self.imgsArrow[self.curInt].transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         }
@@ -83,7 +83,7 @@ class NoticeVC: UIViewController {
         UIView.animate(withDuration: 0.5) {
             self.lblTitles[self.curInt].textColor = color.mint.getcolor()
             self.lblDetails[self.curInt].textColor = color.B6.getcolor()
-            self.viewsNotice[self.curInt].backgroundColor = UIColor.white
+            self.viewsNotice[self.curInt].backgroundColor = UIColor(named: "colorGray200")
             self.imgsArrow[self.curInt].transform = CGAffineTransform(rotationAngle: 0)
         }
         

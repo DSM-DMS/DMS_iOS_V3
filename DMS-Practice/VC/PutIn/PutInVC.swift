@@ -45,7 +45,8 @@ class PutInVC: UIViewController {
     }
     
     @objc func musicApply() {
-        goNextVC("musicApplyVC")
+        goNextVC("weekendMealApplyVC")
+//        goNextVC("musicApplyVC")
     }
     
     @objc func gooutApply() {

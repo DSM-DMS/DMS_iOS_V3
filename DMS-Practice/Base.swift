@@ -20,6 +20,9 @@ extension UIViewController {
     
     func goNextVC(_ id: String){
         let vc = storyboard?.instantiateViewController(withIdentifier: id)
+        if id == "weekendMealApplyVC" {
+            vc!.modalPresentationStyle = .fullScreen
+        }
         present(vc!, animated: true, completion: nil)
     }
     
@@ -363,7 +366,8 @@ enum color {
         case .B5:
             return UIColor(red: 128/255, green: 128/255, blue: 128/255, alpha: 1)
         case .B6:
-            return UIColor(red: 96/255, green: 96/255, blue: 96/255, alpha: 1)
+            
+            return UIColor(named: "colorGray700") ?? UIColor(red: 96/255, green: 96/255, blue: 96/255, alpha: 1)
         case .B7:
             return UIColor(red: 64/255, green: 64/255, blue: 64/255, alpha: 1)
         case .B8:

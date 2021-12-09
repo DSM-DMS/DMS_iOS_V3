@@ -60,7 +60,7 @@ class SelfstudyApplyVC: UIViewController {
             btnsStudyRoomOutlet[i].layer.borderColor = UIColor.lightGray.cgColor
         }
         
-        btnsStudyRoomOutlet[0].backgroundColor = UIColor(red: 240/255, green: 240/256, blue: 240/256, alpha: 1)
+        btnsStudyRoomOutlet[0].backgroundColor = UIColor(named: "colorGray100")
         btnsStudyRoomOutlet[0].layer.borderWidth = 2
         btnsStudyRoomOutlet[0].layer.borderColor = color.mint.getcolor().cgColor
         btnsStudyRoomOutlet[0].tintColor = color.mint.getcolor()
@@ -75,13 +75,13 @@ class SelfstudyApplyVC: UIViewController {
     
     @IBAction func btnsStudyRoom(_ sender: UIButton) {
         for i in 0...10 {
-            btnsStudyRoomOutlet[i].backgroundColor = UIColor.white
+            btnsStudyRoomOutlet[i].backgroundColor = UIColor(named: "colorGray200")
             btnsStudyRoomOutlet[i].layer.borderColor = UIColor.lightGray.cgColor
             btnsStudyRoomOutlet[i].layer.borderWidth = 1
-            btnsStudyRoomOutlet[sender.tag].backgroundColor = UIColor.white
+            btnsStudyRoomOutlet[sender.tag].backgroundColor = UIColor(named: "colorGray200")
             
         }
-        btnsStudyRoomOutlet[sender.tag].backgroundColor = UIColor(red: 240/255, green: 240/256, blue: 240/256, alpha: 1)
+        btnsStudyRoomOutlet[sender.tag].backgroundColor = UIColor(named: "colorGray100")
         btnsStudyRoomOutlet[sender.tag].layer.borderWidth = 2
         btnsStudyRoomOutlet[sender.tag].layer.borderColor = color.mint.getcolor().cgColor
         btnsStudyRoomOutlet[sender.tag].tintColor = color.mint.getcolor()
@@ -318,13 +318,17 @@ extension UIButton{
     fileprivate func setShape(state: SeatState){
         switch state {
         case .empty:
-            backgroundColor = UIColor(displayP3Red: 233/255, green: 233/255, blue: 233/255, alpha: 1)
+            backgroundColor = UIColor(named: "colorGray400")
             layer.borderWidth = 0
         case .select:
             layer.borderWidth = 3
             layer.borderColor = UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 1).cgColor
         case .unavailable:
-            backgroundColor = UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1)
+            if #available(iOS 13.0, *) {
+                backgroundColor = UIColor.systemGray4
+            } else {
+                backgroundColor = UIColor.systemGray
+            }
             layer.borderWidth = 0
         case .exist:
             backgroundColor = color.mint.getcolor()

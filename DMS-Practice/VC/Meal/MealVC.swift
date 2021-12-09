@@ -96,7 +96,7 @@ class MealVC: UIViewController {
             self.date! -= self.aDay
         }
         for i in 0...2 {
-            UIView.animate(withDuration: 0.2, delay: 0.0, options: UIView.AnimationOptions.curveLinear, animations: {
+            UIView.animate(withDuration: 0.1, delay: 0.0, options: UIView.AnimationOptions.curveLinear, animations: {
                 self.viewsMealBack[i].center.x = CGFloat(before)
             }, completion: {(finished:Bool) in
                 let dateStr = self.dateFormatter.string(from: self.date)
@@ -105,7 +105,7 @@ class MealVC: UIViewController {
                 let dateString = String(wd.weekday!)
                 self.lblDayofWeek.text = self.getDay(wd: dateString) + " 식단표"
                 self.viewsMealBack[i].center.x = CGFloat(after)
-                UIView.animate(withDuration: 0.5) {
+                UIView.animate(withDuration: 0.3) {
                     self.viewsMealBack[i].center.x = self.view.center.x
                 }
                 if i == 0 { self.getData() }
