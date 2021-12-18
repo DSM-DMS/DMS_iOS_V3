@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MealExtentsion" type="AppleAppExtensionRunConfiguration" factoryName="AppleAppExtension" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DMS-Practice" TARGET_NAME="DMS-Practice" CONFIG_NAME="Debug" SCHEME_NAME="MealExtentsion" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="true" APP_EXTENSION_TARGET="MealExtentsion" EXTENSION_BUNDLE_ID="leedonggi.DMS-V3.MealExtension" EXTENSION_TYPE_ID="com.apple.widget-extension">
+    <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+      <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+    </EXTENSION>
+    <embedded_app_extension_list>
+      <app_extension BUNDLE_ID="leedonggi.DMS-V3.MealExtension" EXTENSION_TYPE_ID="com.apple.widget-extension" />
+    </embedded_app_extension_list>
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

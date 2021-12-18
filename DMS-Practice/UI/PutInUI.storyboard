@@ -25,16 +25,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uh-tT-gkc">
-                                <rect key="frame" x="30" y="192.5" width="354" height="126"/>
+                                <rect key="frame" x="30" y="195" width="354" height="125.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연장 신청" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS1-mU-bp2">
-                                        <rect key="frame" x="17" y="42" width="56" height="18"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <rect key="frame" x="17" y="41" width="59.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학과시간 이후에 연장학습을 할 수 있습니다." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wpy-7x-7Bf">
-                                        <rect key="frame" x="17" y="67.5" width="333" height="17"/>
+                                        <rect key="frame" x="17" y="68" width="333" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="h1r-hz-NyZ"/>
                                         </constraints>
@@ -53,16 +53,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTj-r4-5ky">
-                                <rect key="frame" x="30" y="337.5" width="354" height="126.5"/>
+                                <rect key="frame" x="30" y="339.5" width="354" height="125.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잔류 신청" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-5W-Qtn">
-                                        <rect key="frame" x="17" y="42" width="56" height="18"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <rect key="frame" x="17" y="41" width="59.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="금요일부터 일요일 저녁까지의 상태를 신청합니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ch2-p9-B8x">
-                                        <rect key="frame" x="17" y="67.5" width="333" height="17"/>
+                                        <rect key="frame" x="17" y="68" width="333" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="WpW-X8-ehD"/>
                                         </constraints>
@@ -81,16 +81,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJG-pN-OuF">
-                                <rect key="frame" x="30" y="483" width="354" height="126"/>
+                                <rect key="frame" x="30" y="484" width="354" height="125.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주말 급식 신청" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sZ-ga-I2Y">
-                                        <rect key="frame" x="17" y="42" width="237" height="18"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <rect key="frame" x="17" y="41" width="237" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주말급식을 신청할 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdC-S3-FQg">
-                                        <rect key="frame" x="17" y="67.5" width="333" height="17"/>
+                                        <rect key="frame" x="17" y="68" width="333" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="lcO-GO-FQX"/>
                                         </constraints>
@@ -110,16 +110,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHJ-p7-WBu">
-                                <rect key="frame" x="30" y="628" width="354" height="126"/>
+                                <rect key="frame" x="30" y="628.5" width="354" height="125.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="외출 신청" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-zq-ML9">
-                                        <rect key="frame" x="17" y="42" width="56" height="18"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <rect key="frame" x="17" y="41" width="59.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="외출신청서를 작성하여 외출할 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEM-gH-Apb">
-                                        <rect key="frame" x="17" y="67.5" width="333" height="17"/>
+                                        <rect key="frame" x="17" y="68" width="333" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="6mO-oE-zDY"/>
                                         </constraints>
@@ -138,8 +138,8 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연장 신청, 잔류신청, 외출 신청, 기상음악 신청을 할 수 있습니다." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wo5-cz-5ZL">
-                                <rect key="frame" x="37" y="129" width="340" height="33.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <rect key="frame" x="37" y="129" width="340" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <color key="textColor" name="colorGray700"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1052,7 +1052,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10-02" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLG-cr-u28">
                                 <rect key="frame" x="16" y="162" width="187" height="34"/>
-                                <color key="backgroundColor" red="0.97647720575332642" green="0.9764588475227356" blue="0.97647124528884888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1062,7 +1062,7 @@
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="12:30 ~ 17:30" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h1Y-oj-fgO">
                                 <rect key="frame" x="211" y="162" width="187" height="34"/>
-                                <color key="backgroundColor" red="0.97647720575332642" green="0.9764588475227356" blue="0.97647124528884888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1086,7 +1086,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0R3-dU-poj">
                                 <rect key="frame" x="25" y="155" width="23" height="14"/>
-                                <color key="backgroundColor" red="0.97647720575332642" green="0.9764588475227356" blue="0.97647124528884888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="colorGray100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="Ubs-qC-ChQ"/>
                                 </constraints>
@@ -1096,7 +1096,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJs-AD-pht">
                                 <rect key="frame" x="219.5" y="155" width="23" height="14"/>
-                                <color key="backgroundColor" red="0.97647720579999997" green="0.9764588475" blue="0.97647124529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="colorGray100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="BYY-qc-Pp7"/>
                                 </constraints>
@@ -1106,7 +1106,7 @@
                             </label>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사유를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R3f-nI-13R">
                                 <rect key="frame" x="16" y="262" width="382" height="34"/>
-                                <color key="backgroundColor" red="0.97647720579999997" green="0.9764588475" blue="0.97647124529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1116,7 +1116,7 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사유" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjV-AK-0Oy">
                                 <rect key="frame" x="29" y="255" width="23" height="14"/>
-                                <color key="backgroundColor" red="0.97647720579999997" green="0.9764588475" blue="0.97647124529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="colorGray100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="23" id="k9h-78-PAQ"/>
                                     <constraint firstAttribute="height" constant="14" id="poE-0j-0Eb"/>

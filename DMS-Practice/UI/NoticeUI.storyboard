@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sQG-n2-Y6H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sQG-n2-Y6H">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,33 +24,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ktw-Ow-3g5">
-                                <rect key="frame" x="47" y="275" width="321" height="77"/>
+                                <rect key="frame" x="47" y="277.33333333333331" width="321" height="77"/>
                                 <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="35v-6e-Kbb"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQd-Sx-lhz">
-                                <rect key="frame" x="37" y="263" width="340" height="85"/>
+                                <rect key="frame" x="37" y="265.33333333333331" width="340" height="85"/>
                                 <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="HDu-jU-UZw"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27z-G5-4fx">
-                                <rect key="frame" x="30" y="250" width="354" height="94"/>
+                                <rect key="frame" x="30" y="252.33333333333337" width="354" height="94"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="VVD-hX-GeG">
-                                        <rect key="frame" x="317" y="34" width="24" height="24"/>
+                                        <rect key="frame" x="317" y="33.999999999999972" width="24" height="24"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공지사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGH-5L-gNc">
-                                        <rect key="frame" x="17" y="27.666666666666686" width="52" height="18"/>
+                                        <rect key="frame" x="17" y="27.666666666666657" width="52" height="18"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사감부에서 게시한 공지사항을 열람합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-ZY-C15">
-                                        <rect key="frame" x="17" y="52.333333333333314" width="197" height="14.333333333333329"/>
+                                        <rect key="frame" x="17" y="52.333333333333343" width="197" height="14.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="colorGray700"/>
                                         <nil key="highlightedColor"/>
@@ -68,21 +68,21 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lr-y6-lG2">
-                                <rect key="frame" x="47" y="395" width="321" height="77"/>
+                                <rect key="frame" x="47" y="397.33333333333331" width="321" height="77"/>
                                 <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="Qk8-eI-4qB"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOK-jC-n4z">
-                                <rect key="frame" x="37" y="383" width="340" height="85"/>
+                                <rect key="frame" x="37" y="385.33333333333331" width="340" height="85"/>
                                 <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="JG4-gu-BkT"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CmF-rJ-Znt">
-                                <rect key="frame" x="30" y="370" width="354" height="94"/>
+                                <rect key="frame" x="30" y="372.33333333333331" width="354" height="94"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="5kW-16-wgE">
                                         <rect key="frame" x="317" y="34" width="24" height="24"/>
@@ -94,7 +94,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사감부에서 게시한 규정을 열람합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btq-rV-vb6">
-                                        <rect key="frame" x="17" y="52.333333333333314" width="176.33333333333334" height="14.333333333333329"/>
+                                        <rect key="frame" x="17" y="52.333333333333371" width="176.33333333333334" height="14.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="colorGray700"/>
                                         <nil key="highlightedColor"/>
@@ -112,33 +112,33 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Top-qM-oLM">
-                                <rect key="frame" x="47" y="515" width="321" height="77"/>
+                                <rect key="frame" x="47" y="517.33333333333337" width="321" height="77"/>
                                 <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="n8n-FO-878"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqW-Xe-NcP">
-                                <rect key="frame" x="37" y="503" width="340" height="85"/>
+                                <rect key="frame" x="37" y="505.33333333333326" width="340" height="85"/>
                                 <color key="backgroundColor" name="colorGray200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="8WQ-Vp-t7G"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5N-5h-sot">
-                                <rect key="frame" x="30" y="490" width="354" height="94"/>
+                                <rect key="frame" x="30" y="492.33333333333326" width="354" height="94"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="ffL-2M-8Gw">
-                                        <rect key="frame" x="317" y="34" width="24" height="24"/>
+                                        <rect key="frame" x="317" y="34.000000000000057" width="24" height="24"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자주하는 질문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd4-qv-3n6">
-                                        <rect key="frame" x="17" y="27.666666666666629" width="81.666666666666671" height="18"/>
+                                        <rect key="frame" x="17" y="27.666666666666686" width="81.666666666666671" height="18"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자주하는 질문을 열람합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0X-IM-7d4">
-                                        <rect key="frame" x="17" y="52.333333333333371" width="131.66666666666666" height="14.333333333333329"/>
+                                        <rect key="frame" x="17" y="52.333333333333314" width="131.66666666666666" height="14.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="colorGray700"/>
                                         <nil key="highlightedColor"/>
@@ -156,8 +156,8 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DMS는 대덕 소프트웨어 마이스터고등학교 기숙사 생활에 필요한 유용한 정보를 제공합니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av6-YU-HFT">
-                                <rect key="frame" x="37" y="192.66666666666666" width="264.33333333333331" height="33.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <rect key="frame" x="37" y="192.66666666666666" width="282.66666666666669" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <color key="textColor" name="colorGray600"/>
                                 <nil key="highlightedColor"/>
                             </label>
