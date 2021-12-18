@@ -11,29 +11,13 @@ import UIKit
 class DeveloperVC: UIViewController {
     
     @IBOutlet weak var viewGoback: UIView!
-    @IBOutlet var imgsDeveloper: [UIImageView]!
-    @IBOutlet var viewsName: [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        viewGoback.layer.cornerRadius = viewGoback.frame.height / 2
         
-        for i in 0...12 {
-            let rectShape1 = CAShapeLayer()
-            rectShape1.bounds = self.imgsDeveloper[i].frame
-            rectShape1.position = self.imgsDeveloper[i].center
-            rectShape1.path = UIBezierPath(roundedRect: self.imgsDeveloper[i].bounds, byRoundingCorners: [.topLeft , .topRight], cornerRadii: CGSize(width: 17, height: 17)).cgPath
-            self.imgsDeveloper[i].layer.mask = rectShape1
-            let rectShape2 = CAShapeLayer()
-            rectShape2.bounds = self.viewsName[i].frame
-            rectShape2.position = self.viewsName[i].center
-            rectShape2.path = UIBezierPath(roundedRect: self.viewsName[i].bounds, byRoundingCorners: [.bottomLeft , .bottomRight], cornerRadii: CGSize(width: 17, height: 17)).cgPath
-            self.viewsName[i].layer.mask = rectShape2
-            imgsDeveloper[i].layer.masksToBounds = false
-            dropShadowImg(view: imgsDeveloper[i], color: UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16), offSet: CGSize(width: 3, height: 3))
-        }
+        viewGoback.layer.cornerRadius = viewGoback.frame.height / 2
     }
+    
     
     @IBAction func btnGoback(_ sender: Any) {
         goBack()
@@ -49,5 +33,5 @@ class DeveloperVC: UIViewController {
         view.layer.shouldRasterize = true
         view.layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
-
+    
 }
