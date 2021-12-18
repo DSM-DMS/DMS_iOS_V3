@@ -79,9 +79,9 @@ class GooutApplyVC: UIViewController {
     
     func changeColor() {
         for i in 0...2 {
-            viewsBack[i].backgroundColor = UIColor.white
+            viewsBack[i].backgroundColor = UIColor(named: "colorGray200")
             lblsDay[i].textColor = color.mint.getcolor()
-            lblsDescription[i].textColor = UIColor.darkGray
+            lblsDescription[i].textColor = UIColor(named: "colorGray700")
         }
         viewsBack[num].backgroundColor = color.mint.getcolor()
         lblsDay[num].textColor = UIColor.white
