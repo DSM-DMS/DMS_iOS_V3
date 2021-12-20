@@ -115,7 +115,7 @@ class PointListCell: UITableViewCell {
     override func awakeFromNib() {
         viewBackground.layer.cornerRadius = 17
         viewBackground.layer.masksToBounds = false
-        viewBackground.layer.shadowColor = UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16).cgColor
+        viewBackground.layer.shadowColor = UIColor(named: "barColor")!.cgColor
         viewBackground.layer.shadowOpacity = 0.5
         viewBackground.layer.shadowOffset = CGSize(width: 3, height: 3)
         viewBackground.layer.shadowRadius = 5

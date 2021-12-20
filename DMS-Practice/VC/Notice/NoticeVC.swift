@@ -25,7 +25,7 @@ class NoticeVC: UIViewController {
     override func viewDidLoad() {
         for i in 0...8 {
             viewsNotice[i].layer.cornerRadius = 24
-            dropShadow(view: viewsNotice[i], color: UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16), offSet: CGSize(width: 0, height: 10))
+            dropShadow(view: viewsNotice[i], color: UIColor(named: "barColor")!, offSet: CGSize(width: 0, height: 10))
         }
         
         for i in 0...2 {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		59085775220C4312000AC793 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59085774220C4312000AC793 /* NotificationCenter.framework */; };
 		59085778220C4312000AC793 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59085777220C4312000AC793 /* TodayViewController.swift */; };
 		5908577B220C4312000AC793 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59085779220C4312000AC793 /* MainInterface.storyboard */; };
-		5908577F220C4312000AC793 /* MealExtentsion.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59085773220C4312000AC793 /* MealExtentsion.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5908577F220C4312000AC793 /* MealExtentsion.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59085773220C4312000AC793 /* MealExtentsion.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		590E594121E42B6B00829FBF /* MusicSendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E594021E42B6B00829FBF /* MusicSendVC.swift */; };
 		590FC41B21DC61F900C7E8C9 /* DetailNoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590FC41A21DC61F900C7E8C9 /* DetailNoticeVC.swift */; };
 		590FC42121DDB79F00C7E8C9 /* RemainApplyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590FC42021DDB79F00C7E8C9 /* RemainApplyVC.swift */; };
@@ -113,6 +113,7 @@
 		38C3E55AC4DD0840A789CCF4 /* Pods_MealExtentsion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealExtentsion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		524FB85816350725184EE4C9 /* Pods-DMS-PracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMS-PracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMS-PracticeTests/Pods-DMS-PracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		568A4D70621F7903F125E703 /* Pods_DMS_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMS_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5786DFBF277010E4007636D9 /* DMS-Practice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DMS-Practice.entitlements"; sourceTree = "<group>"; };
 		59085773220C4312000AC793 /* MealExtentsion.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MealExtentsion.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		59085774220C4312000AC793 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		59085777220C4312000AC793 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -360,6 +361,7 @@
 		59D517C821C768C700192176 /* DMS-Practice */ = {
 			isa = PBXGroup;
 			children = (
+				5786DFBF277010E4007636D9 /* DMS-Practice.entitlements */,
 				59D517C921C768C700192176 /* AppDelegate.swift */,
 				59D517F721C76D3200192176 /* Fonts */,
 				59CC156921C7703600AF0FC0 /* UI */,
@@ -764,6 +766,7 @@
 /* Begin PBXTargetDependency section */
 		5908577E220C4312000AC793 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 59085772220C4312000AC793 /* MealExtentsion */;
 			targetProxy = 5908577D220C4312000AC793 /* PBXContainerItemProxy */;
 		};
@@ -805,7 +808,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.3;
+				CURRENT_PROJECT_VERSION = 1.1.4;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = MealExtentsion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -813,11 +816,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3.MealExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -829,7 +833,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.3;
+				CURRENT_PROJECT_VERSION = 1.1.4;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = MealExtentsion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -837,11 +841,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3.MealExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -971,21 +976,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DMS-Practice/DMS-Practice.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.3;
+				CURRENT_PROJECT_VERSION = 1.1.4;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -995,21 +1002,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DMS-Practice/DMS-Practice.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.3;
+				CURRENT_PROJECT_VERSION = 1.1.4;
 				DEVELOPMENT_TEAM = Z25H7B85Z8;
 				INFOPLIST_FILE = "DMS-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "leedonggi.DMS-V3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -30,7 +30,7 @@ class WeekendMealApplyVC: UIViewController {
         dropShadowButton(button: btnApplyOutlet, color: UIColor.gray, offSet: CGSize(width: 3, height: 3))
         for i in 0...2 {
             viewsBackground[i].layer.cornerRadius = 17
-            dropShadow(view: viewsBackground[i], color: UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16), offSet: CGSize(width: 3, height: 3))
+            dropShadow(view: viewsBackground[i], color: UIColor(named: "barColor")!, offSet: CGSize(width: 3, height: 3))
         }
         // Do any additional setup after loading the view.
         let firAction = UITapGestureRecognizer(target: self, action: #selector(self.firstAction))

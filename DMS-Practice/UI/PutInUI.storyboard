@@ -429,7 +429,7 @@
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyk-jS-XwF">
                                 <rect key="frame" x="18" y="791" width="183.5" height="41"/>
-                                <color key="backgroundColor" red="0.87451565265655518" green="0.87449926137924194" blue="0.87451040744781494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="colorGray500"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="RPt-6s-cjP"/>
                                 </constraints>
@@ -1575,6 +1575,9 @@
         </namedColor>
         <namedColor name="colorGray200">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorGray500">
+            <color red="0.74900001287460327" green="0.74900001287460327" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="colorGray700">
             <color red="0.25099998712539673" green="0.25099998712539673" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

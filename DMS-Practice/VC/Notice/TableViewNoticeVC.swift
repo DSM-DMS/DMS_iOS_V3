@@ -36,7 +36,7 @@ class TableViewNoticeVC: UIViewController {
         imgArrow.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         viewMain.backgroundColor = color.mint.getcolor()
         viewMain.layer.cornerRadius = 17
-        dropShadow(view: viewMain, color: UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16), offSet: CGSize(width: 3, height: 3))
+        dropShadow(view: viewMain, color: UIColor(named: "barColor")!, offSet: CGSize(width: 3, height: 3))
         lblTitle.textColor = UIColor.white
         lblDetail.textColor = UIColor.white
         
@@ -178,7 +178,7 @@ class NoticeListCell: UITableViewCell {
     override func awakeFromNib() {
         viewTable.layer.cornerRadius = 17
         viewTable.layer.masksToBounds = false
-        viewTable.layer.shadowColor = UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16).cgColor
+        viewTable.layer.shadowColor = UIColor(named: "barColor")!.cgColor
         viewTable.layer.shadowOpacity = 0.5
         viewTable.layer.shadowOffset = CGSize(width: 3, height: 3)
         viewTable.layer.shadowRadius = 5

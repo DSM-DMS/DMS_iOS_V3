@@ -44,7 +44,7 @@ class MealVC: UIViewController {
         
         for i in 0...2 {
             viewsMealBack[i].layer.cornerRadius = 15
-            dropShadow(view: viewsMealBack[i], color: UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16), offSet: CGSize(width: 5, height: 5))
+            dropShadow(view: viewsMealBack[i], color: UIColor(named: "barColor")!, offSet: CGSize(width: 5, height: 5))
         }
         
         UITabBar.appearance().unselectedItemTintColor = UIColor(red: 151/255, green: 214/255, blue: 215/255, alpha: 1)

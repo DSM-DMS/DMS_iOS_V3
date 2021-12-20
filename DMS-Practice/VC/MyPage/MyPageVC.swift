@@ -25,8 +25,8 @@ class MyPageVC: UIViewController{
         viewPrise.layer.cornerRadius = 16
         viewPenalty.layer.cornerRadius = 16
         
-        dropShadow(view: viewPrise, color: UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16), offSet: CGSize(width: 3, height: 3))
-        dropShadow(view: viewPenalty, color: UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16), offSet: CGSize(width: 3, height: 3))
+        dropShadow(view: viewPrise, color: UIColor(named: "barColor")!, offSet: CGSize(width: 3, height: 3))
+        dropShadow(view: viewPenalty, color: UIColor(named: "barColor")!, offSet: CGSize(width: 3, height: 3))
         
         viewCondition.layer.cornerRadius = 17
     }

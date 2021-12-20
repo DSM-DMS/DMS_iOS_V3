@@ -18,7 +18,7 @@ class PutInVC: UIViewController {
         
         for i in 0...3 {
             viewsBack[i].layer.cornerRadius = 17
-            dropShadow(view: viewsBack[i], color: UIColor(red: 25/255, green: 182/255, blue: 182/255, alpha: 0.16), offSet: CGSize(width: 3, height: 3))
+            dropShadow(view: viewsBack[i], color: UIColor(named: "barColor")!, offSet: CGSize(width: 3, height: 3))
             lblsDetail[i].fitTextToBounds()
         }
         
