@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5k2-57-BNO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5k2-57-BNO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -216,25 +216,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov2-8E-qOS">
-                                <rect key="frame" x="45" y="169" width="38" height="20"/>
+                                <rect key="frame" x="45" y="221" width="38" height="20"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a4-TU-vB7">
-                                <rect key="frame" x="86" y="173" width="37.5" height="14"/>
+                                <rect key="frame" x="86" y="225" width="37.5" height="14"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dormitory Management System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUr-yl-o2g">
-                                <rect key="frame" x="45" y="189" width="170.5" height="14"/>
+                                <rect key="frame" x="45" y="241" width="170.5" height="14"/>
                                 <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="12"/>
                                 <color key="textColor" red="0.76589792970000004" green="0.90972495080000004" blue="0.90980690720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeP-L7-KxG">
-                                <rect key="frame" x="0.0" y="248" width="414" height="648"/>
+                                <rect key="frame" x="0.0" y="300" width="414" height="596"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="확인코드 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVE-Jh-0eD">
                                         <rect key="frame" x="46" y="36" width="55" height="12"/>
@@ -301,7 +301,7 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anD-rr-1VV">
                                         <rect key="frame" x="46" y="272" width="321" height="2"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="colorGray800"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="Q9Q-BZ-nHe"/>
                                         </constraints>
@@ -319,7 +319,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAJ-Wf-zuR">
-                                        <rect key="frame" x="17" y="561" width="380" height="45"/>
+                                        <rect key="frame" x="17" y="509" width="380" height="45"/>
                                         <color key="backgroundColor" name="colorPrimary"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="1Yb-BW-J1R"/>
@@ -332,7 +332,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.97647720579999997" green="0.9764588475" blue="0.97647124529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="colorGray100"/>
                                 <constraints>
                                     <constraint firstItem="WXi-Hd-B4B" firstAttribute="leading" secondItem="SeP-L7-KxG" secondAttribute="leading" constant="46" id="2tu-oD-PAe"/>
                                     <constraint firstItem="eb3-JS-xgI" firstAttribute="top" secondItem="yMF-kF-eee" secondAttribute="bottom" constant="17" id="3nX-05-1eI"/>
@@ -375,7 +375,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="v5r-fo-sdU">
-                                <rect key="frame" x="45" y="94" width="50" height="52"/>
+                                <rect key="frame" x="45" y="94" width="100.5" height="104"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a2-cm-dJ4">
                                 <rect key="frame" x="366" y="60" width="24" height="24"/>
@@ -434,7 +434,7 @@
     </scenes>
     <resources>
         <image name="close_white" width="24" height="24"/>
-        <image name="logo_white" width="50" height="52"/>
+        <image name="logo_white" width="100.5" height="104"/>
         <namedColor name="colorGray100">
             <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
