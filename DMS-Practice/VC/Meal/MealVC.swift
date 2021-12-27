@@ -30,9 +30,9 @@ class MealVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        formatter.dateFormat = "YYYY-MM-dd"
-        dateStr = formatter.string(from: datee)
+        let fom = DateFormatter()
+        fom.dateFormat = "yyy-MM-dd"
+        dateStr = fom.string(from: datee)
         
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeLeft.direction = .left
@@ -49,7 +49,7 @@ class MealVC: UIViewController {
         
         UITabBar.appearance().unselectedItemTintColor = UIColor(red: 151/255, green: 214/255, blue: 215/255, alpha: 1)
         date = Date()
-        dateFormatter.dateFormat = "yyyy년 MM월 dd일"
+        dateFormatter.dateFormat = "yyy년 MM월 dd일"
         let wd = calendar.dateComponents([.weekday], from: date)
         let dateString = String(wd.weekday!)
         lblDate.text = dateFormatter.string(from: date)
@@ -59,26 +59,36 @@ class MealVC: UIViewController {
     }
     
     @IBAction func btnLeft(_ sender: Any) {
+        print(datee)
         datee -= TimeInterval(86400)
-        dateStr = formatter.string(from: datee)
+        let fom = DateFormatter()
+        fom.dateFormat = "yyy-MM-dd"
+        dateStr = fom.string(from: datee)
         changeLocation(bool: false)
     }
     
     @IBAction func btnRight(_ sender: Any) {
+        print(datee)
         datee += TimeInterval(86400)
-        dateStr = formatter.string(from: datee)
+        let fom = DateFormatter()
+        fom.dateFormat = "yyy-MM-dd"
+        dateStr = fom.string(from: datee)
         changeLocation(bool: true)
     }
     
     @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizer.Direction.right {
             datee -= TimeInterval(86400)
-            dateStr = formatter.string(from: datee)
+            let fom = DateFormatter()
+            fom.dateFormat = "yyy-MM-dd"
+            dateStr = fom.string(from: datee)
             changeLocation(bool: false)
         }
         else if gesture.direction == UISwipeGestureRecognizer.Direction.left {
             datee += TimeInterval(86400)
-            dateStr = formatter.string(from: datee)
+            let fom = DateFormatter()
+            fom.dateFormat = "yyy-MM-dd"
+            dateStr = fom.string(from: datee)
             changeLocation(bool: true)
         }
     }
@@ -157,7 +167,7 @@ class MealVC: UIViewController {
                         DispatchQueue.main.async {self!.lblsMeals[0].text = self!.breakfastMenu}
                     }
                 }
-
+                
                 if jsonSerialization["dinner"]?.count != 0 {
                     self!.dinnerMenu = ""
                     var i = 0
@@ -225,7 +235,7 @@ class MealVC: UIViewController {
                 }
                 
             }
-            }.resume()
+        }.resume()
     }
     
     func checkData() {
@@ -249,7 +259,7 @@ class MealVC: UIViewController {
             default:
                 break
             }
-            }.resume()
+        }.resume()
     }
     
     func getDay(wd: String) -> String {
