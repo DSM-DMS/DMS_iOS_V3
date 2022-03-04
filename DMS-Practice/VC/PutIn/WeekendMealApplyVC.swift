@@ -19,9 +19,18 @@ class WeekendMealApplyVC: UIViewController {
     var curCondition = 0
     var preCondition = 2
     
+    override func viewWillAppear(_ animated: Bool) {
+        _ = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.topItem?.title = ""
+
         getStayCondition()
         
         navigationController?.interactivePopGestureRecognizer?.delegate = nil

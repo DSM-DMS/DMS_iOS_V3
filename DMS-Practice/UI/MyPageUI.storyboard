@@ -587,7 +587,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="상벌점 내역 조회" id="uCz-64-rHy">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="goBack" style="plain" id="Yum-Pu-zEa">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" style="plain" id="Yum-Pu-zEa">
+                            <color key="tintColor" name="colorGray700"/>
                             <connections>
                                 <action selector="btnBack:" destination="cCU-fX-8Db" id="hEw-uw-uDn"/>
                             </connections>
@@ -691,7 +692,7 @@
                                 <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOS 업데이트 하면서 선배들 사진이 잘리네요. 언젠가는 만들깨요 ㅎㅎ (사실 귀찮음)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYm-oe-XL1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOS 시스템 업데이트 하면서 선배들 사진이 잘리네요. 언젠가는 만들깨요 ㅎㅎ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYm-oe-XL1">
                                 <rect key="frame" x="45" y="379.66666666666669" width="285" height="33.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" name="colorGray700"/>
@@ -785,7 +786,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="설문조사" id="Xc7-aI-VBq">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="goBack" id="OCa-bW-PKr">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="OCa-bW-PKr">
+                            <color key="tintColor" name="colorGray700"/>
                             <connections>
                                 <action selector="btnBack:" destination="4ay-ER-SiR" id="E2O-BO-bfq"/>
                             </connections>
@@ -881,8 +883,8 @@
     <resources>
         <image name="brokenReport" width="20" height="20"/>
         <image name="bugReport" width="24" height="24"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="close_white" width="24" height="24"/>
-        <image name="goBack" width="24" height="24"/>
         <image name="logo" width="67" height="69.333335876464844"/>
         <image name="mypage" width="24" height="24"/>
         <image name="submit" width="24" height="24"/>

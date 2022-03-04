@@ -22,9 +22,15 @@ class GooutApplyVC: UIViewController {
     var sunCnt = 0
     var dayCnt = 0
     
+
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.topItem?.title = ""
+
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
 
         btnApplyOutlet.layer.cornerRadius = 17
@@ -51,7 +57,8 @@ class GooutApplyVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("hello")
+        _ = true
+        self.tabBarController?.tabBar.isHidden = true
         getData()
     }
     

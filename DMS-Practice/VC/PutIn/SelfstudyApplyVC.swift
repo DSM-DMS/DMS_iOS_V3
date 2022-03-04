@@ -42,11 +42,19 @@ class SelfstudyApplyVC: UIViewController {
     
     var beforeButton: UIButton? = nil
     var contentView: UIView? = nil
-    
-    
+
+    override func viewWillAppear(_ animated: Bool) {
+        _ = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.topItem?.title = ""
+
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
 
         backView.layer.cornerRadius = 15

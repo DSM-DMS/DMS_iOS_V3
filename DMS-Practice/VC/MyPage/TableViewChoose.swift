@@ -12,9 +12,11 @@ class TableViewChoose: UITableViewController {
 
     var tableList = [tableListClass]()
     
+    let backgroundView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        backgroundView.backgroundColor = .clear
         tableList.append(tableListClass(title: "로그아웃", subTitle: "기기내 계정에서 로그아웃합니다"))
         tableList.append(tableListClass(title: "비밀번호 변경", subTitle: "DMS 계정의 비밀번호를 변경합니다"))
         tableList.append(tableListClass(title: "상 / 벌점 내역", subTitle: "우정관 상/ 벌점 내역을 확인합니다"))
@@ -37,7 +39,8 @@ class TableViewChoose: UITableViewController {
         
         cell.varTitle?.text = tableList[(indexPath as NSIndexPath).row].title
         cell.varSubtitle?.text = tableList[(indexPath as NSIndexPath).row].subTitle
-        
+        cell.selectedBackgroundView = backgroundView
+
         return cell
     }
     
@@ -58,7 +61,7 @@ class TableViewChoose: UITableViewController {
                 Token.instance.remove()
                 self.goNextVCwithUIid(UIid: "AccountUI", VCid: "EmptyVC")
             }
-            let cancel = UIAlertAction(title: "취소", style: .default)
+            let cancel = UIAlertAction(title: "취소", style: .cancel)
             alert.addAction(cancel)
             alert.addAction(ok)
             self.present(alert, animated: true, completion: nil)

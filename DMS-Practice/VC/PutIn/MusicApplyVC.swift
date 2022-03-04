@@ -17,8 +17,17 @@ class MusicApplyVC: UIViewController {
     
     var num = 5
     
+    override func viewWillAppear(_ animated: Bool) {
+        _ = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.topItem?.title = ""
 
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         

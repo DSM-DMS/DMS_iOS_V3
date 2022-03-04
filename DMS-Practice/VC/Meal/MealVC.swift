@@ -147,11 +147,11 @@ class MealVC: UIViewController {
                             return
                         }
                         if list!["breakfast"]?.count == 1 {
-                            DispatchQueue.main.async {self!.lblsMeals[0].text = "급식이 없습니다"}
+                            DispatchQueue.main.async {self!.lblsMeals[0].text = "급식이 없어요"}
                             break
                         }
                         if list!["breakfast"] == nil {
-                            DispatchQueue.main.async {self!.lblsMeals[0].text = "급식이 없습니다"}
+                            DispatchQueue.main.async {self!.lblsMeals[0].text = "급식이 없어요"}
                             break
                         }
                         if i < (list!["breakfast"]?.count)! {
@@ -173,11 +173,11 @@ class MealVC: UIViewController {
                     var i = 0
                     while true {
                         if list!["dinner"] == nil {
-                            DispatchQueue.main.async {self!.lblsMeals[2].text = "급식이 없습니다"}
+                            DispatchQueue.main.async {self!.lblsMeals[2].text = "급식이 없어요"}
                             break
                         }
                         if list!["dinner"]?.count == 1 {
-                            DispatchQueue.main.async {self!.lblsMeals[2].text = "급식이 없습니다"}
+                            DispatchQueue.main.async {self!.lblsMeals[2].text = "급식이 없어요"}
                             break
                         }
                         if i < (list!["dinner"]?.count)! {
@@ -199,11 +199,11 @@ class MealVC: UIViewController {
                     var i = 0
                     while true {
                         if list!["lunch"] == nil {
-                            DispatchQueue.main.async {self!.lblsMeals[1].text = "급식이 없습니다"}
+                            DispatchQueue.main.async {self!.lblsMeals[1].text = "급식이 없어요"}
                             break
                         }
                         if list!["lunch"]?.count == 1 {
-                            DispatchQueue.main.async {self!.lblsMeals[1].text = "급식이 없습니다"}
+                            DispatchQueue.main.async {self!.lblsMeals[1].text = "급식이 없어요"}
                             break
                         }
                         if i < (list!["lunch"]?.count)! {
@@ -221,7 +221,7 @@ class MealVC: UIViewController {
                 }
             case 205:
                 for i in 0...2 {
-                    DispatchQueue.main.async {self!.lblsMeals[i].text = "급식이 없습니다"}
+                    DispatchQueue.main.async {self!.lblsMeals[i].text = "급식이 없어요"}
                 }
             case 418:
                 print("나는 찻잔이야")
@@ -231,7 +231,7 @@ class MealVC: UIViewController {
                 }
             default:
                 for i in 0...2 {
-                    DispatchQueue.main.async {self!.lblsMeals[i].text = "살려주세요"}
+                    DispatchQueue.main.async {self!.lblsMeals[i].text = "서버가 터졌어요, 살려주세요!!"}
                 }
                 
             }

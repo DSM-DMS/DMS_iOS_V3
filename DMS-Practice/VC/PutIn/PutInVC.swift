@@ -13,6 +13,10 @@ class PutInVC: UIViewController {
     @IBOutlet var viewsBack: [UIView]!
     @IBOutlet var lblsDetail: [UILabel]!
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,37 +25,12 @@ class PutInVC: UIViewController {
             dropShadow(view: viewsBack[i], color: UIColor(named: "barColor")!, offSet: CGSize(width: 3, height: 3))
             lblsDetail[i].fitTextToBounds()
         }
-        
-        let selfstudy = UITapGestureRecognizer(target: self, action:  #selector(self.selfstudyApply))
-        let remain = UITapGestureRecognizer(target: self, action:  #selector(self.remainApply))
-        let music = UITapGestureRecognizer(target: self, action:  #selector(self.musicApply))
-        let goout = UITapGestureRecognizer(target: self, action:  #selector(self.gooutApply))
-        self.viewsBack[0].addGestureRecognizer(selfstudy)
-        self.viewsBack[1].addGestureRecognizer(remain)
-        self.viewsBack[2].addGestureRecognizer(music)
-        self.viewsBack[3].addGestureRecognizer(goout)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if !loginCheck() { goNextVCwithUIid(UIid: "AccountUI", VCid: "EmptyVC") }
     }
 
-    @objc func selfstudyApply() {
-        goNextVC("selfstudyApplyVC")
-    }
-    
-    @objc func remainApply() {
-        goNextVC("remainApplyVC")
-    }
-    
-    @objc func musicApply() {
-        goNextVC("weekendMealApplyVC")
-//        goNextVC("musicApplyVC")
-    }
-    
-    @objc func gooutApply() {
-        goNextVC("gooutApplyVC")
-    }
     
     /*
     // MARK: - Navigation
