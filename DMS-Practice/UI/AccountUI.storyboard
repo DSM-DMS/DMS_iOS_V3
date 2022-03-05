@@ -97,14 +97,14 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="join" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 DMS 회원이 아니신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ0-bi-7dY">
-                                        <rect key="frame" x="46" y="286" width="112" height="11"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <rect key="frame" x="46" y="286" width="170.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="colorGray600"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbQ-C1-cEB">
-                                        <rect key="frame" x="329" y="280" width="35" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <rect key="frame" x="312" y="280" width="52" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="회원가입">
                                             <color key="titleColor" red="0.33427274227142334" green="0.70166808366775513" blue="0.70981007814407349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -137,6 +137,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="1lr-4N-gFC"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="로그인">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -312,18 +313,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다시 확인하세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKS-7S-NSC">
-                                        <rect key="frame" x="46" y="273" width="321" height="13.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" systemColor="systemRedColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAJ-Wf-zuR">
                                         <rect key="frame" x="17" y="509" width="380" height="45"/>
                                         <color key="backgroundColor" name="colorPrimary"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="1Yb-BW-J1R"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="회원가입">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -331,6 +327,12 @@
                                             <action selector="btnSignUp:" destination="iQw-Da-OJ6" eventType="touchUpInside" id="s2A-QR-8pp"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다시 확인하세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKS-7S-NSC">
+                                        <rect key="frame" x="46" y="282" width="321" height="13.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" name="colorGray100"/>
                                 <constraints>
@@ -357,7 +359,7 @@
                                     <constraint firstAttribute="trailing" secondItem="yMF-kF-eee" secondAttribute="trailing" constant="47" id="XqJ-HD-iw2"/>
                                     <constraint firstAttribute="trailing" secondItem="cjo-dO-Fdn" secondAttribute="trailing" constant="47" id="Zs1-9F-b6j"/>
                                     <constraint firstItem="60d-35-lwB" firstAttribute="leading" secondItem="SeP-L7-KxG" secondAttribute="leading" constant="46" id="bv0-VJ-hu5"/>
-                                    <constraint firstItem="XKS-7S-NSC" firstAttribute="top" secondItem="8ht-2u-UUp" secondAttribute="bottom" constant="8" id="bxu-SM-XzA"/>
+                                    <constraint firstItem="XKS-7S-NSC" firstAttribute="top" secondItem="8ht-2u-UUp" secondAttribute="bottom" constant="17" id="bxu-SM-XzA"/>
                                     <constraint firstItem="lAJ-Wf-zuR" firstAttribute="leading" secondItem="SeP-L7-KxG" secondAttribute="leading" constant="17" id="e3M-bM-qfO"/>
                                     <constraint firstItem="hVE-Jh-0eD" firstAttribute="top" secondItem="SeP-L7-KxG" secondAttribute="top" constant="36" id="fQC-ZI-XAm"/>
                                     <constraint firstItem="eQi-HU-T5O" firstAttribute="leading" secondItem="SeP-L7-KxG" secondAttribute="leading" constant="46" id="fYe-2x-xkF"/>

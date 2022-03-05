@@ -54,20 +54,20 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네트워크 상태를 확인하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wg3-Ml-fBz">
-                                        <rect key="frame" x="20.000000000000014" y="50" width="216.33333333333337" height="22"/>
+                                        <rect key="frame" x="19.999999999999986" y="50" width="237.66666666666663" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="Ha8-MX-RJG"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다시 키면 해결되요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-r5-bEW">
-                                        <rect key="frame" x="20.000000000000007" y="76" width="104.66666666666669" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다시 키면 해결될 거에요 ㅎㅎ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-r5-bEW">
+                                        <rect key="frame" x="20" y="76" width="171.66666666666666" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="kA5-PN-V09"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.60229033231735229" green="0.84294766187667847" blue="0.84706360101699829" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -98,7 +98,7 @@
                                                     <constraint firstAttribute="width" constant="47" id="6be-Vn-NtG"/>
                                                     <constraint firstAttribute="height" constant="26" id="FUd-yb-IBk"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <color key="textColor" name="colorGray800"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -131,7 +131,7 @@
                                                     <constraint firstAttribute="height" constant="26" id="K1D-x3-EZp"/>
                                                     <constraint firstAttribute="width" constant="55" id="oKp-3y-t2R"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <color key="textColor" name="colorGray800"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -210,8 +210,8 @@
                                 <rect key="frame" x="20" y="295" width="335" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="라면 좀 먹으면서 살아라..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY2-KF-DSS">
-                                        <rect key="frame" x="100" y="10" width="135" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="95.333333333333329" y="10" width="144.66666666666669" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -281,16 +281,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bxF-74-D5g">
-                                            <rect key="frame" x="16" y="27.333333333333329" width="31.666666666666668" height="18"/>
+                                            <rect key="frame" x="16.000000000000004" y="26.333333333333336" width="33.333333333333336" height="19.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                             <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2qd-Mg-NFM">
-                                            <rect key="frame" x="15.999999999999996" y="48" width="40.666666666666664" height="13.333333333333334"/>
+                                            <rect key="frame" x="15.999999999999996" y="48.333333333333329" width="43.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" name="colorGray700"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -341,32 +341,32 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 변경" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZu-aC-eio">
-                                <rect key="frame" x="25" y="134" width="93" height="20"/>
-                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="17"/>
+                                <rect key="frame" x="25.000000000000007" y="134" width="98.666666666666686" height="21"/>
+                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="18"/>
                                 <color key="textColor" red="0.33427274227142334" green="0.70166808366775513" blue="0.70981007814407349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DMS 시스템의 비밀번호를 변경합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z81-7U-ZT7">
-                                <rect key="frame" x="25" y="160" width="170" height="13"/>
+                                <rect key="frame" x="25" y="161" width="170" height="13"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="11"/>
                                 <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기존 비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4A5-Rh-2sc">
-                                <rect key="frame" x="25" y="253.99999999999997" width="65.666666666666671" height="14.666666666666657"/>
+                                <rect key="frame" x="25" y="254.99999999999997" width="65.666666666666671" height="14.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <color key="textColor" red="0.61961215734481812" green="0.61960017681121826" blue="0.61960834264755249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0f-rf-QoQ">
-                                <rect key="frame" x="25" y="297.66666666666669" width="326" height="2"/>
+                                <rect key="frame" x="25" y="298.66666666666669" width="326" height="2"/>
                                 <color key="backgroundColor" name="colorGray800"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="9KP-tD-7IL"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVS-el-H6S">
-                                <rect key="frame" x="33" y="278.66666666666669" width="310" height="12"/>
+                                <rect key="frame" x="33" y="279.66666666666669" width="310" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="Qm6-ll-zVi"/>
                                 </constraints>
@@ -375,20 +375,20 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새 비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-fJ-qNJ">
-                                <rect key="frame" x="24.999999999999996" y="334.66666666666669" width="55.666666666666657" height="14.333333333333314"/>
+                                <rect key="frame" x="24.999999999999996" y="335.66666666666669" width="55.666666666666657" height="14.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <color key="textColor" red="0.61961215734481812" green="0.61960017681121826" blue="0.61960834264755249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eg9-7V-zCw">
-                                <rect key="frame" x="25" y="378" width="326" height="2"/>
+                                <rect key="frame" x="25" y="379" width="326" height="2"/>
                                 <color key="backgroundColor" name="colorGray800"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="Inp-2S-RvD"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="새 비밀번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uM5-aX-87M">
-                                <rect key="frame" x="33" y="359" width="310" height="12"/>
+                                <rect key="frame" x="33" y="360" width="310" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="GMG-Ys-30a"/>
                                 </constraints>
@@ -397,20 +397,20 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBQ-OS-SCg">
-                                <rect key="frame" x="25" y="415" width="65.666666666666671" height="14.333333333333314"/>
+                                <rect key="frame" x="25" y="416" width="65.666666666666671" height="14.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <color key="textColor" red="0.61961215734481812" green="0.61960017681121826" blue="0.61960834264755249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ape-gY-8tU">
-                                <rect key="frame" x="25" y="458.33333333333331" width="326" height="2"/>
+                                <rect key="frame" x="25" y="459.33333333333331" width="326" height="2"/>
                                 <color key="backgroundColor" name="colorGray800"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="fqQ-Mb-YQe"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 확인해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-Z3-VxO">
-                                <rect key="frame" x="33" y="439.33333333333331" width="310" height="12"/>
+                                <rect key="frame" x="33" y="440.33333333333331" width="310" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="Syt-XT-P0c"/>
                                 </constraints>
@@ -419,7 +419,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호가 같지 않습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weP-Pv-yCw">
-                                <rect key="frame" x="27" y="465.33333333333331" width="105" height="12"/>
+                                <rect key="frame" x="27" y="466.33333333333331" width="105" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -534,11 +534,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용이 들어가요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW0-Tb-8xd">
-                                                    <rect key="frame" x="15" y="25" width="224" height="18"/>
+                                                    <rect key="frame" x="15" y="24.333333333333336" width="224" height="19.333333333333336"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="224" id="QZp-xW-TIu"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                     <color key="textColor" name="colorGray800"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

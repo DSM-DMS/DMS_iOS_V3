@@ -114,7 +114,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         let parameters = ["uuid":txtCheckCode.text!, "id": txtID.text!, "password": txtPassword.text!]
         
         //create the url with URL
-        let url = URL(string: "https://api.dsm-dms/account/signup")!
+        let url = URL(string: "https://api.dsm-dms.com/account/signup")!
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST" //set http method as POST
