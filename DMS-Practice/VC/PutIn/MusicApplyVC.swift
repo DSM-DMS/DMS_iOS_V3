@@ -17,12 +17,10 @@ class MusicApplyVC: UIViewController {
     
     var num = 5
     
+
     override func viewWillAppear(_ animated: Bool) {
-        _ = true
         self.tabBarController?.tabBar.isHidden = true
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        self.tabBarController?.tabBar.isHidden = false
+        self.tabBarController?.tabBar.isTranslucent = true // <- 이코드가 꼭 있어야함
     }
     
     override func viewDidLoad() {

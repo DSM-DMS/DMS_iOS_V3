@@ -23,8 +23,12 @@ class GooutApplyVC: UIViewController {
     var dayCnt = 0
     
 
-    override func viewWillDisappear(_ animated: Bool) {
-        self.tabBarController?.tabBar.isHidden = false
+
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+        self.tabBarController?.tabBar.isTranslucent = true // <- 이코드가 꼭 있어야함
+        getData()
+
     }
     
     override func viewDidLoad() {
@@ -54,12 +58,6 @@ class GooutApplyVC: UIViewController {
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        _ = true
-        self.tabBarController?.tabBar.isHidden = true
-        getData()
     }
     
     @IBAction func btnApply(_ sender: Any) {
