@@ -26,34 +26,34 @@ class SelfstudyApplyVC: UIViewController {
     private var selectedSeat = 0
     
     private let placeArr: [Place] =
-        [
-            Place(top: "칠판", left: "창문", right: "복도"),
-            Place(top: "칠판", left: "창문", right: "복도"),
-            Place(top: "칠판", left: "창문", right: "복도"),
-            Place(top: "칠판", left: "창문", right: "복도"),
-            Place(top: "창문", left: "", right: ""),
-            Place(top:  "창문", left: "학교", right: "옆방"),
-            Place(top:  "창문", left: "옆방", right: "계단"),
-            Place(top: "창문", left: "학교", right: "옆방"),
-            Place(top: "창문", left:  "옆방", right: "계단"),
-            Place(top: "창문", left:  "학교", right: "계단"),
-            Place(top: "", left: "", right: "")
-        ]
+    [
+        Place(top: "칠판", left: "창문", right: "복도"),
+        Place(top: "칠판", left: "창문", right: "복도"),
+        Place(top: "칠판", left: "창문", right: "복도"),
+        Place(top: "칠판", left: "창문", right: "복도"),
+        Place(top: "창문", left: "", right: ""),
+        Place(top:  "창문", left: "학교", right: "옆방"),
+        Place(top:  "창문", left: "옆방", right: "계단"),
+        Place(top: "창문", left: "학교", right: "옆방"),
+        Place(top: "창문", left:  "옆방", right: "계단"),
+        Place(top: "창문", left:  "학교", right: "계단"),
+        Place(top: "", left: "", right: "")
+    ]
     
     var beforeButton: UIButton? = nil
     var contentView: UIView? = nil
-
+    
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = true
         self.tabBarController?.tabBar.isTranslucent = true // <- 이코드가 꼭 있어야함
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.topItem?.title = ""
-
+        
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
-
+        
         backView.layer.cornerRadius = 15
         for i in 0...1 {
             btnsAction[i].layer.cornerRadius = 10
@@ -224,15 +224,15 @@ class SelfstudyApplyVC: UIViewController {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension SelfstudyApplyVC {

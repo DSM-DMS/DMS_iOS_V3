@@ -83,7 +83,7 @@ class ChangePasswordVC: UIViewController, UITextFieldDelegate {
     
     func getData() {
         let parameters = ["currentPassword": txtOriginPassword.text!, "newPassword": txtNewPassword.text!]
-        let url = URL(string: "https://api.dms.istruly.sexy/account/pw")!
+        let url = URL(string: "https://api.dsm-dms.com/account/pw")!
         var request = URLRequest(url: url)
         request.httpMethod = "PATCH"
         do {
@@ -104,7 +104,7 @@ class ChangePasswordVC: UIViewController, UITextFieldDelegate {
             switch (res as! HTTPURLResponse).statusCode{
             case 201:
                 DispatchQueue.main.async {
-                    self?.showToast(msg: "변경되었습니다")
+                    self?.showToast(msg: "변경되었습니다, 로그아웃 해 주세요")
                 }
             case 205:
                 print("로그인 실패")

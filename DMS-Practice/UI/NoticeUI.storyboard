@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sQG-n2-Y6H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sQG-n2-Y6H">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -382,10 +382,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목이 들어가요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="en6-Fn-vYX">
-                                        <rect key="frame" x="20" y="93" width="244" height="23"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="244" id="C9F-C6-bFS"/>
-                                        </constraints>
+                                        <rect key="frame" x="20" y="93" width="394" height="23"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
                                         <color key="textColor" red="0.33427274229999998" green="0.7016680837" blue="0.70981007809999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -415,6 +412,7 @@
                                     <constraint firstItem="en6-Fn-vYX" firstAttribute="top" secondItem="G06-Af-ff2" secondAttribute="bottom" constant="23" id="H9l-Gt-jgL"/>
                                     <constraint firstItem="G06-Af-ff2" firstAttribute="leading" secondItem="xtv-fF-ITE" secondAttribute="leading" constant="20" id="JNW-xo-zWU"/>
                                     <constraint firstItem="sy4-D3-Rqq" firstAttribute="leading" secondItem="xtv-fF-ITE" secondAttribute="leading" constant="20" id="hbQ-op-UgX"/>
+                                    <constraint firstAttribute="trailing" secondItem="en6-Fn-vYX" secondAttribute="trailing" id="m9B-Uw-rvc"/>
                                     <constraint firstAttribute="trailing" secondItem="9vA-FU-BVe" secondAttribute="trailing" constant="20" id="mFW-ko-H4M"/>
                                     <constraint firstItem="en6-Fn-vYX" firstAttribute="leading" secondItem="xtv-fF-ITE" secondAttribute="leading" constant="20" id="ntk-gu-n2n"/>
                                     <constraint firstItem="9vA-FU-BVe" firstAttribute="leading" secondItem="xtv-fF-ITE" secondAttribute="leading" constant="20" id="vnv-fq-40v"/>
